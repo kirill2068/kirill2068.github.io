@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Editor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="stuff">
+      <h1>Резюме</h1>
+      <h2>Симонов Кирилл</h2>
+      <hr />
+    
+      <p class="head">Опыт</p>
+      <ul id="experience-list">
+        <li contenteditable="true">Опыт работы - школа</li>
+        <li contenteditable="true">Опыт работы - СибГУТИ</li>
+      </ul>
+      <p class="head">Образование</p>
+      <ul id="education-list">
+        <li contenteditable="true">СибГУТИ</li>
+      </ul>
+      <p class="head">Контакты</p>
+      <ul id="contacts-list">
+        <li contenteditable="true">Почта: simonovkirill@mail.com</li>
+        <li contenteditable="true">Контактный номер: +791313370</li>
+      </ul>
+      <p>
+        <button id="download-pdf-button">Скачать как PDF</button>
+      </p>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
